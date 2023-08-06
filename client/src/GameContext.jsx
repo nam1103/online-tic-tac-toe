@@ -14,7 +14,7 @@ export function GameContextProvider({ children }) {
 	const [currentRoomInfo, setCurrentRoomInfo] = useState(null);
 
 	useEffect(() => {
-		const newSocket = io("http://localhost:3000");
+		const newSocket = io("https://online-tic-tac-toe-socket.onrender.com");
 
 		setSocket(newSocket);
 
